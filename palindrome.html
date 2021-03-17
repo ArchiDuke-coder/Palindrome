@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check palindrome</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let str = prompt('Enter anything: ');
+    if (isPalindrome(str)){
+        alert(str+ ' is a palindrome');
+    } else {
+        alert(str+' is NOT a palindrome');
+    }
+
+    function isPalindrome(){
+        let check = true;
+        let max = str.length-1;
+        let min = 0;
+        while (min < max){
+            if (str[min] != str[max]){
+                check = false;
+            }
+            min++;
+            max--;
+        }
+        return check;
+    }
+</script>
